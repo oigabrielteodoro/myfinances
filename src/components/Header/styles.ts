@@ -57,7 +57,7 @@ export const NavigationItem = styled.li<NavigationItemProps>`
     `}
 
   & + li {
-    margin-left: 2.5rem;
+    margin-left: 2rem;
   }
 
   &:hover {

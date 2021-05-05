@@ -1,13 +1,23 @@
 import { AppProps } from 'next/app';
-import { GlobalStyle } from "../styles/global";
+
+import { Header } from '~/components/Header';
+
+import { Container } from '~/styles';
+
+import { GlobalStyle } from '../styles/global';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      <Component {...pageProps} />
+
+      <Header />
+
+      <Container role="main">
+        <Component {...pageProps} />
+      </Container>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

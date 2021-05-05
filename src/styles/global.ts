@@ -38,10 +38,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Rubik', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat';
-  }
-
   html {
     @media (max-width: 1080px) {
       font-size: 93.75%;

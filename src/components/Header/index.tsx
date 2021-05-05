@@ -17,7 +17,8 @@ export function Header() {
 
       <NavigationContainer>
         <ul>
-          <NavigationItem isSelected>Dashboard</NavigationItem>
+          <NavigationItem isSelected>Home</NavigationItem>
+          <NavigationItem>Perfil</NavigationItem>
           <NavigationItem>Configurações</NavigationItem>
           <NavigationItem>Transações</NavigationItem>
         </ul>

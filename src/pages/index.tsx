@@ -1,11 +1,15 @@
-import { Header } from "~/components/Header";
+import { CardAnalytic } from '~/components/CardAnalytic';
 
-import { Wrapper } from '~/styles/pages/Home';
+import { Container, AnalyticsContainer } from '~/styles/pages/Home';
 
 export default function Home() {
   return (
-    <Wrapper>
-      <Header />
-    </Wrapper>
-  )
+    <Container>
+      <AnalyticsContainer>
+        <CardAnalytic title="Entradas" currentValue={150} />
+        <CardAnalytic title="Saídas" currentValue={150} />
+        <CardAnalytic title="Total" currentValue={150} />
+      </AnalyticsContainer>
+    </Container>
+  );
 }
