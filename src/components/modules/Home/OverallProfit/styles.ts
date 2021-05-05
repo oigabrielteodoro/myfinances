@@ -75,10 +75,9 @@ export const ObjectiveProgressContainer = styled.div<ObjectiveProgressContainerP
       position: absolute;
       width: ${progress}%;
       height: 10px;
-      background: var(--green-400);
+      background: var(--purple-400);
 
       border-radius: 5px;
-      box-shadow: 0px 0px 15px rgba(73, 234, 196, 0.15);
     }
   `}
 `;

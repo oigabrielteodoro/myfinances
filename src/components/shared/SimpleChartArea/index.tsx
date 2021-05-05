@@ -61,7 +61,7 @@ const SimpleAreaChart = ({ series }: SimpleAreaChartProps) => {
         )}</div>`;
       },
     },
-    colors: ['#49EAC4'],
+    colors: ['#5636D3'],
     fill: {
       type: 'gradient',
       gradient: {
