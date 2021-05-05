@@ -2,7 +2,7 @@ import { SEO } from '~/components/shared/SEO';
 
 import { CardAnalytic } from '~/components/shared/CardAnalytic';
 
-import { OverallProfit } from '~/components/modules/Dashboard/OverallProfit';
+import { OverallProfit } from '~/components/modules/Home/OverallProfit';
 
 import LayoutGrid from '~/components/shared/LayoutGrid';
 
