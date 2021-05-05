@@ -10,10 +10,25 @@ const GlobalStyle = createGlobalStyle`
 
   :root {
     --white: #ffffff;
+    --background: #000005;
+
+    --gray-50: #CCCCCC;
+    --gray-100: #8F9097;
+    --gray-400: #6B6D74;
+    --gray-800: #43444A;
+
+    --purple-100: #A089FB;
+    --purple-400: #5636D3;
+
+    --green-400: #49EAC4;
+
+    --red-400: #EA4F6D;
+    --red-800: #C61D3E;
   }
 
   body {
-    background: var(--white);
+    color: var(--white);
+    background: var(--background);
     -webkit-font-smoothing: antialiased;
   }
 
