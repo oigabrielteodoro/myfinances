@@ -2,6 +2,8 @@ import { CardAnalytic } from '~/components/shared/CardAnalytic';
 
 import { OverallProfit } from '~/components/modules/Dashboard/OverallProfit';
 
+import LayoutGrid from '~/components/shared/LayoutGrid';
+
 import { Container, AnalyticsContainer } from '~/styles/pages/Home';
 
 export default function Home() {
@@ -13,7 +15,9 @@ export default function Home() {
         <CardAnalytic title="Total" currentValue={150} />
       </AnalyticsContainer>
 
-      <OverallProfit />
+      <LayoutGrid gridTemplateColumns="2fr 1fr">
+        <OverallProfit />
+      </LayoutGrid>
     </Container>
   );
 }

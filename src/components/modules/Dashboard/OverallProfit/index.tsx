@@ -1,9 +1,66 @@
-import { Container } from './styles';
+import { useState } from 'react';
+import { FiPlus } from 'react-icons/fi';
+
+import { SelectCategory } from '~/components/shared/SelectCategory';
+
+import {
+  Container,
+  Content,
+  Header,
+  ObjectiveContainer,
+  ObjectiveCard,
+  ObjectiveProgressContainer,
+  CreateObjective,
+} from './styles';
 
 export function OverallProfit() {
+  const [categorySelected, setCategorySelected] = useState<string>('monthly');
+
+  const categories = [
+    { label: 'Mensal', value: 'monthly' },
+    { label: 'Anual', value: 'yearly' },
+  ];
+
   return (
     <Container>
-      <h1>OverallProfit</h1>
+      <Header>
+        <strong>Lucro do {categorySelected === 'monthly' ? 'mês' : 'ano'}</strong>
+
+        <SelectCategory
+          categories={categories}
+          categorySelected={categorySelected}
+          onUpdateCategory={setCategorySelected}
+        />
+      </Header>
+
+      <Content />
+
+      <ObjectiveContainer>
+        <ObjectiveCard>
+          <strong>
+            Meta mensal <span>R$ 150,00 de R$ 800,00</span>
+          </strong>
+
+          <ObjectiveProgressContainer progress={25} />
+
+          <CreateObjective>
+            <FiPlus size={16} />
+            Nova meta mensal
+          </CreateObjective>
+        </ObjectiveCard>
+        <ObjectiveCard>
+          <strong>
+            Meta anual <span>R$ 150,00 de R$ 12.000,00</span>
+          </strong>
+
+          <ObjectiveProgressContainer progress={5} />
+
+          <CreateObjective>
+            <FiPlus size={16} />
+            Nova meta anual
+          </CreateObjective>
+        </ObjectiveCard>
+      </ObjectiveContainer>
     </Container>
   );
 }

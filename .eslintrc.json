@@ -26,16 +26,55 @@
   ],
   "rules": {
     "prettier/prettier": "error",
-    "react/react-in-jsx-scope": "off",
-    "camelcase": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "react/jsx-filename-extension": ["off", { "extensions": [".ts", ".tsx"] }],
-    "import/prefer-default-export": "off",
+    "react/jsx-one-expression-per-line": "off",
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
-    "import/extensions": "off",
-    "react/require-default-props": "off"
+    "camelcase": "off",
+    "import/no-dynamic-require": "off",
+    "global-require": "off",
+    "prefer-const": "off",
+    "no-new": "off",
+    "eqeqeq": "off",
+    "no-shadow": "off",
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "no-plusplus": "off",
+    "no-use-before-define": "off",
+    "no-underscore-dangle": "off",
+    "import/no-unresolved": "off",
+    "react/jsx-wrap-multilines": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/require-default-props": "off",
+    "no-unused-expressions": "off",
+    "no-nested-ternary": "off",
+    "react/jsx-no-target-blank": "off",
+    "jsx-a11y/media-has-caption": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "argsIgnorePattern": "_"
+    }],
+    "class-methods-use-this": "off",
+    "no-useless-constructor": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "import/prefer-default-export": "off",
+    "import/no-duplicates": "off",
+    "react/jsx-curly-newline": "off",
+    "no-param-reassign": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
   },
   "settings": {
     "import/resolver": {
