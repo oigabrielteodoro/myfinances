@@ -34,7 +34,7 @@ export function Header() {
             <strong>Gabriel Teodoro</strong>
             <span>@oigabrielteodoro</span>
           </section>
-          <AccountAvatar>JG</AccountAvatar>
+          <AccountAvatar>G</AccountAvatar>
         </AccountInformationContainer>
       </AccountContainer>
     </Container>

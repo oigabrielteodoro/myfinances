@@ -107,6 +107,8 @@ export const AccountAvatar = styled.div`
   color: var(--gray-50);
   font-size: 1.25rem;
 
+  font-weight: 500;
+
   height: 62px;
   width: 62px;
 

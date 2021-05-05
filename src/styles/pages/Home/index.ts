@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  display: grid;
+  grid-gap: 1.25rem;
+`;
 
 export const AnalyticsContainer = styled.div`
   display: grid;
