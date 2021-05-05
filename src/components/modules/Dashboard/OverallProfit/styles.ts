@@ -35,7 +35,7 @@ export const ObjectiveContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.25rem;
 
-  margin: 30px 30px;
+  margin: 0 30px 30px;
 `;
 
 export const ObjectiveCard = styled.div`

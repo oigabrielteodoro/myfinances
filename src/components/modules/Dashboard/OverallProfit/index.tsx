@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { FiPlus } from 'react-icons/fi';
 
 import { SelectCategory } from '~/components/shared/SelectCategory';
+import SimpleAreaChart from '~/components/shared/SimpleChartArea';
 
 import {
   Container,
-  Content,
   Header,
   ObjectiveContainer,
   ObjectiveCard,
@@ -33,7 +33,14 @@ export function OverallProfit() {
         />
       </Header>
 
-      <Content />
+      <SimpleAreaChart
+        series={[
+          {
+            name: 'Lucro',
+            data: [31, 40, 28, 51, 30],
+          },
+        ]}
+      />
 
       <ObjectiveContainer>
         <ObjectiveCard>
