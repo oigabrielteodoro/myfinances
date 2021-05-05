@@ -27,6 +27,7 @@ export const Header = styled.div`
 export const Content = styled.div`
   background: var(--background-secondary);
   height: 300px;
+  margin-top: 15px;
 `;
 
 export const ObjectiveContainer = styled.div`
