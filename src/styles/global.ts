@@ -11,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --white: #ffffff;
     --background: #000005;
+    --background-secondary: #36373F;
+    --shape: #202024;
 
     --gray-50: #CCCCCC;
     --gray-100: #8F9097;

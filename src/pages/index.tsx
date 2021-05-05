@@ -1,5 +1,11 @@
+import { Header } from "~/components/Header";
+
+import { Wrapper } from '~/styles/pages/Home';
+
 export default function Home() {
   return (
-    <h1>Hello MyFinances</h1>
+    <Wrapper>
+      <Header />
+    </Wrapper>
   )
 }
